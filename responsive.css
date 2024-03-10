@@ -1,0 +1,24 @@
+@media (max-width:576px) {
+    .banner-text-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-heading{
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .about-me .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me .left{
+        display: none;
+    }
+    .about-me .right{
+        width: 100%;
+        padding: 0 0;
+    }
+}

@@ -1,0 +1,57 @@
+@font-face {
+    font-family: myFont1;
+    src: url(fonts/pxiEyp8kv8JHgFVrJJfecg.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body {
+height: 100%;
+width: 100%;
+}
+
+.nav{
+    background-color: #918f9400;
+    color: white;
+}
+.navbar-collapse ul li:hover{
+    border-bottom: solid 1px #ec5325;
+   
+}
+table,th,td{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px 15px;
+}
+
+.about-me .left{
+
+background-color: white;
+}
+
+.about-me .left img{
+bottom: 0;
+}
+.about-me .right p{
+color: white; 
+}
+.about-me .right {
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+padding: 0 20px;
+}
+.about-me .right td {
+color: white;
+}
+.about-me {
+font-family: myFont1;
+}
