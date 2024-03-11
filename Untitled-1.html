@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .progress-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .progress-bar {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      clip: rect(0, 100px, 100px, 50px);
+      border-radius: 50%;
+    }
+
+    .progress-bar-fill {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background-color: #3498db;
+      clip: rect(0, 50px, 100px, 0);
+      border-radius: 50%;
+      transform-origin: right center;
+    }
+
+    .percentage-text {
+      z-index: 2;
+      font-size: 18px;
+      font-weight: bold;
+      color: #3498db;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+    <div class="progress-bar-fill" id="progress-bar-fill"></div>
+    <div class="percentage-text" id="percentage-text">50%</div>
+  </div>
+
+  <script>
+    // JavaScript to update the progress bar based on the percentage
+    const progressBarFill = document.getElementById('progress-bar-fill');
+    const percentageText = document.getElementById('percentage-text');
+    
+    // Set the percentage (change this value to update the progress)
+    const percentage = 75;
+
+    const filledAngle = (percentage / 100) * 360;
+    progressBarFill.style.transform = `rotate(${filledAngle}deg)`;
+    percentageText.innerText = `${percentage}%`;
+  </script>
+
+</body>
+</html>
