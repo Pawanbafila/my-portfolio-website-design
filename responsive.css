@@ -22,3 +22,17 @@
         padding: 0 0;
     }
 }
+
+@media (max-width:576px) {
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-form .row1{
+    text-align: center;
+}
+
+
+}
