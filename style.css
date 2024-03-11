@@ -29,7 +29,7 @@ table,th,td{
     border-collapse: collapse;
 }
 th,td{
-    padding: 10px 15px;
+    padding: 10px 0px;
 }
 
 .about-me .left{
