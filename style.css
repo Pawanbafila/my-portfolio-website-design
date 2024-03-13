@@ -68,3 +68,32 @@ font-family: myFont1;
     background-color: skyblue;
 }
 
+
+
+
+
+
+
+
+
+.round{
+    transition: all 1s ease-in-out 0s;
+    background-color: #EC5325;
+}
+
+.round:hover{
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+.round h2{
+    transition: all 1s ease-in-out 0s;
+    color: #ffffff;
+}
+
+.round:hover > h2{
+  
+    transform: scale(2) !important;
+    color: rgb(0, 0, 0);
+}
+
